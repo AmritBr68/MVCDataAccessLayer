@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MVCDataAccessLayer
+{
+    public interface IProductDataService
+    {
+        public Product GetProductById(int id);
+        public List<Product> GetAllProducts();
+        public void InsertProduct(Product product);
+        public void DeleteProduct(Product product);
+
+        public void UpdateProduct(Product product);
+
+    }
+}
